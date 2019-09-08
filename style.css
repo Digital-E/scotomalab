@@ -1,0 +1,79 @@
+@font-face {
+  src: url("./fonts/Averta-Semibold.otf");
+  font-family: "Averta-Semibold";
+}
+
+@font-face {
+  src: url("./fonts/UniversLTStd.woff");
+  font-family: "UniversLTStd";
+}
+
+@font-face {
+  src: url("./fonts/UniversLTStd-LightObl.woff");
+  font-family: "UniversLTStd-LightObl";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.marquee3k {
+  font-family: "UniversLTStd";
+  font-size: 250px;
+  opacity: 0.2;
+  position: absolute;
+  filter: blur(10px);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title img {
+  width: 40vw;
+  height: auto;
+}
+
+@media (min-width: 576px) {
+  .header-title img {
+    width: 20vw;
+    height: auto;
+  }
+}
+
+.contact-button-outer {
+}
+
+.contact-button {
+  display: inline-block;
+  font-family: "UniversLTStd";
+  font-size: 1.2rem;
+  border: 1px solid black;
+  width: fit-content;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  transition-duration: 0.5s;
+}
+
+.contact-button:hover {
+  background-color: black;
+  transition-duration: 0.5s;
+}
+
+.contact-button:hover span {
+  color: white;
+  transition-duration: 0.5s;
+}
+
+.contact-button span {
+  position: relative;
+  top: 2px;
+  color: black;
+  transition-duration: 0.5s;
+}
