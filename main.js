@@ -1,2 +1,5 @@
 Marquee3k.init({ selector: "marquee3k" });
-// Marquee3k.init({ selector: "marquee3k2" });
+
+setTimeout(() => {
+  document.querySelector(".container").classList.add("show");
+}, 500);

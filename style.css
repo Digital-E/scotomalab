@@ -23,7 +23,6 @@ body {
   font-size: 250px;
   opacity: 0.2;
   position: absolute;
-  filter: blur(10px);
 }
 
 .container {
@@ -33,6 +32,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition-duration: 2s;
+}
+
+.show {
+  opacity: 1;
+  transition-duration: 2s;
 }
 
 .header-title img {
@@ -76,4 +82,21 @@ body {
   top: 2px;
   color: black;
   transition-duration: 0.5s;
+}
+
+#marquee-one {
+  transform: scale(0.2);
+}
+
+@media (min-width: 576px) {
+  #marquee-one {
+    transform: scale(0.4);
+  }
+}
+
+#marquee-two {
+  transform: scale(1.4);
+}
+
+#marquee-three {
 }
