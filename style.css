@@ -16,13 +16,15 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .marquee3k {
   font-family: "UniversLTStd";
-  font-size: 250px;
   opacity: 0.2;
   position: absolute;
+  overflow: hidden;
+  width: 100vw;
 }
 
 .container {
@@ -34,6 +36,7 @@ body {
   align-items: center;
   opacity: 0;
   transition-duration: 2s;
+  overflow: hidden;
 }
 
 .show {
@@ -85,21 +88,22 @@ body {
 }
 
 #marquee-one {
-  transform: scale(0.2);
+  font-size: 50px;
   opacity: 0.1;
 }
 
 @media (min-width: 576px) {
   #marquee-one {
-    transform: scale(0.4);
+    font-size: 450px;
   }
 }
 
 #marquee-two {
-  transform: scale(1.4);
+  font-size: 250px;
   opacity: 0.05;
 }
 
 #marquee-three {
+  font-size: 100px;
   opacity: 0.08;
 }
