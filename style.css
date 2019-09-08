@@ -86,6 +86,7 @@ body {
 
 #marquee-one {
   transform: scale(0.2);
+  opacity: 0.1;
 }
 
 @media (min-width: 576px) {
@@ -96,7 +97,9 @@ body {
 
 #marquee-two {
   transform: scale(1.4);
+  opacity: 0.05;
 }
 
 #marquee-three {
+  opacity: 0.08;
 }
